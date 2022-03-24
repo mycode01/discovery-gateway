@@ -1,0 +1,12 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: eureka-server
+eureka:
+  instance:
+    hostname: ${peer:peer1}.127.0.0.1.nip.io
+  client:
+    register-with-eureka: true
+    fetch-registry: true
